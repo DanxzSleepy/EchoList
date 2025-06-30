@@ -1,19 +1,51 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity-"sha384-gg0yR01XCbMQv3X1pma34MD+dH/1+0784/J6cY/1JTQU0hcWr7x9JvoRxT2MZw17 crossorigin-"anonymous">
 
 </head>
+
 <body>
-    <p> barra de navegacao </p>
-    {% block content %}
-    {% endblock %}
-    <p> rodape </p>
-    <script src="{ static 'js/script.js' }">
-    </script>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tarefas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Usuarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        {% block content %}
+        {% endblock %}
+        <footer>
+            <p>rodape</p>
+        </footer>
+
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        Integrity-"sha384-xrRywqdh3PHsSkeKZN+Bzzc5TXBGRTLCcmlvcbN3Wx2rs5CBPRhcEn3czEjhA090"
+        crossorigin "anonymous"></script>
+    <script src="{ static 'js/script.js' }"></script>
 </body>
+
 </html>
