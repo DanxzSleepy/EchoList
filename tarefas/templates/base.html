@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">EchoList</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,10 +35,13 @@
                 </ul>
             </div>
         </nav>
-        {% block content %}
-        {% endblock %}
+        <div class="row">
+            {% block content %}
+            {% endblock %}
+        </div>
+
         <footer>
-            <p>rodape</p>
+            <p>"uma frse e direitos autorais depois"</p>
         </footer>
 
     </div>
