@@ -8,14 +8,14 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity-"sha384-gg0yR01XCbMQv3X1pma34MD+dH/1+0784/J6cY/1JTQU0hcWr7x9JvoRxT2MZw17 crossorigin-"anonymous">
+        integrity-"sha384-gg0yR01XCbMQv3X1pma34MD+dH/1+0784/J6cY/1JTQU0hcWr7x9JvoRxT2MZw17" crossorigin-"anonymous">
 
 </head>
 
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">EchoList</a>
+            <a class="navbar-brand" href="">EchoList</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,10 +35,8 @@
                 </ul>
             </div>
         </nav>
-        <div class="row">
-            {% block content %}
-            {% endblock %}
-        </div>
+        {% block content %}
+        {% endblock %}
 
         <footer>
             <p>"uma frse e direitos autorais depois"</p>
@@ -46,8 +44,8 @@
 
     </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        Integrity-"sha384-xrRywqdh3PHsSkeKZN+Bzzc5TXBGRTLCcmlvcbN3Wx2rs5CBPRhcEn3czEjhA090"
-        crossorigin "anonymous"></script>
+        Integrity-'sha384-xrRywqdh3PHsSkeKZN+Bzzc5TXBGRTLCcmlvcbN3Wx2rs5CBPRhcEn3czEjhA090'
+        crossorigin 'anonymous'></script>
     <script src="{ static 'js/script.js' }"></script>
 </body>
 
