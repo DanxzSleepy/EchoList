@@ -1,0 +1,20 @@
+# Ambientes virtuais
+venv/
+voidenv/
+.venv/
+
+# Arquivos do Python/Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+.env
+
+# Diretórios de desenvolvimento
+/staticfiles/
+/media/
+
+# IDE/Editor
+.vscode/
+.idea/
